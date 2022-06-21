@@ -1,0 +1,28 @@
+<section id="postImg">
+    <div id="postDiv">
+    <form id="myForm">
+        <label for="post-title">Name of Dish</label>
+        <input class="swing" type="text" name="post-title" id="post-title" placeholder="Enter Dish Name" required>
+        <br>
+        <h3 class="addIgt">Add Ingredients below 👇</h3> 
+        <ul id="list"><button class="myButton" id="addIngredientBtn">Add Ingredient</button>
+            <li class="listItem"><input type="text" class="ingredient" name="ingredientName" placeholder="Enter Ingredient"/></li>
+        </ul>
+        <br>
+        <label for="meal">Which meal is this for ?:</label>
+        <select class="select" id="meal" name="meal">
+            <option disabled selected>Select Meal Genre</option>
+            <option value="breakfast">Breakfast</option>
+            <option value="lunch">Lunch</option>
+            <option value="dinner">Dinner</option>
+        </select>
+        <br>
+        <button id="nextStepBtn">Next Step</button>
+        <br>
+    </form>
+    </div> 
+</section>
+
+<script src="/js/post.js"></script>
+
+

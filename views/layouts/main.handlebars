@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>World Best Cook Book</title>
+</head>
+<body>
+    <header>
+      <section id="woodNav">
+        <div class="brand-name"><h3>AtlasChef</h3></div>
+        <ul id="navigation-account" class="card-info">
+          {{!-- <button class="btn" id="login"> <a href="/login">Login</a></button> --}}
+          <li><button class="btn" id="breakFast"> <a href="/">Home</a></button></li>
+        {{#if logged_in}}
+        <li><button class="btn" id="logout">Logout</button></li>
+        {{else}}
+        <li><button class="btn" id="login"><a href="/login">Login</a></button></li>
+        <li><button class="btn" id="signup"> <a href="/signup">SignUp</a></button></li>
+        {{/if}}
+        
+        <li><button class="btn" id="breakFast"> <a href="/api/posts/breakfast">BreakFast</a></button></li>
+        <li><button class="btn" id="lunch"> <a href="/api/posts/lunch">Lunch</a></button></li>
+        <li><button class="btn" id="dinner"> <a href="/api/posts/dinner">Dinner</a></button></li>
+        <li><button class="btn" id="recipe"> <a href="/post">Add recipe</a></button></li>
+        </ul>
+      </section>
+    <!-- Only display the logout button if the user is logged in -->
+    </header>
+<main>
+
+
+    
+    
+    {{!-- <div class="card-bg">
+      <div class="card-left"> --}}
+
+
+
+{{!-- <section id="navigation-account">
+        {{#if logged_in}}
+        <button class="btn" id="logout">Logout</button>
+        {{else}}
+        <button class="btn" id="Login"><a href="/login">Login</a></button>
+        <button class="btn" id="signup"> <a href="/signup">SignUp</a></button>
+        {{/if}}
+</section> --}}
+
+
+      {{{body}}}
+
+
+</main>
+
+{{!-- <footer>Made with ❤️️ by The best coders &copy; Copyright 2022</footer> --}}
+
+<!-- Only include the logout script if the user is logged in -->
+  {{#if logged_in}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
+</body>
+</html>
+

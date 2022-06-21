@@ -1,0 +1,20 @@
+<ul>
+    {{#each recipes as |recipe|}}
+    <a class="getRecipe" href="/post/{{recipe.id}}">
+    <li>
+        <h2>
+            {{recipe.name}}
+        </h2>
+        <p>
+            {{recipe.meal}}
+
+        </p>
+        <p>
+            {{recipes.user.name}}
+        </p>
+    </li>
+    </a>
+    {{/each}}
+</ul>
+
+<script src="/js/getSingleRecipe.js"></script>

@@ -1,0 +1,587 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Katibeh&display=swap');
+
+/* Universal Selector */
+* {
+    color: rgb(216, 216, 216);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Html & Body Section */
+html {
+    height:100%;
+    scroll-behavior: smooth;  
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+}
+header {
+    align-items: center;
+    background-color: #d0bcac;
+    height: 4.5rem;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    position: relative;
+    flex-direction: row;
+}
+
+button {
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-bg {
+    position: absolute;
+    width: 90%;
+    height: 97%;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 10px 100px 20px rgba(132, 132, 132, 0.2);
+    border-radius: 54px;
+    background: #FFFFFF80;
+}
+
+.main-bg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-title {
+    opacity: 0.9;
+    position: absolute;
+    width: 85%;
+    height: 25% max-content 30%;
+    background: #5e432f;
+    margin-top: 1%;
+    border-radius: 54px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.card-title,
+h3,
+.h1{
+    font-family: 'Jacques Francois Shadow';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    
+}
+
+.card-left{
+    height: 65%;
+    width: 15%;
+    border-radius: 30px;
+    background: #ABCBE0;
+    border-radius: 54px;
+    box-shadow: 10px 10px 24px 0px #ABCBE0;
+    margin-top: 300px;
+    display: flex;
+    align-self: flex-start;
+    margin-left: 3.5%;
+}
+
+.card-info{
+    font-family: 'Katibeh', cursive;
+    margin: 0px auto;
+    font-size: 40px;
+    width: fit-content;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+a:link,
+a:visited{
+    text-decoration: none;
+    color: #000000;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: #FFFFFF80;
+}
+
+a:active{
+    position:relative;
+	top:1px;
+}
+
+
+/* Login & SignUP  Section */
+
+.signup-page,
+.login-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 100%;
+    flex-direction: column;
+}
+
+.form {
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.form input {
+    font-family: 'Katibeh', cursive;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 25px;
+}
+
+.form button {
+    font-family: 'Katibeh', cursive;
+    text-transform: uppercase;
+    outline: 0;
+    background-color: #328f8a;
+    background-image: linear-gradient(45deg,#328f8a,#08ac4b);
+    width: 100%;
+    border: 0;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+}
+
+.form .message {
+    margin: 15px 0 0;
+    color: #b3b3b3;
+    font-size: 15px;
+}
+
+.form .message a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+  
+.container {
+    position: relative;
+    z-index: 1;
+    max-width: 300px;
+    margin: 0 auto;
+}
+  
+
+/* LogOut btn  */
+
+
+#logout:hover{
+    text-decoration: underline;
+    color: #FFFFFF80;
+}
+
+#logout:active{
+    position:relative;
+	top:1px;
+}
+
+#Login{
+	background-color:#ABCBE0;
+	border:1px solid #ABCBE0;
+	display:inline-block;
+	cursor:pointer;
+	font-family: 'Katibeh', cursive;
+	padding:6px 24px;
+	text-decoration:none;
+    margin: 40%;
+    margin-left: -175%;
+    font-size: 40px;
+    margin-top: 20%;
+}
+
+#signup,
+#breakFast,
+#lunch,
+#dinner,
+#recipe,
+#login,
+#logout {
+    opacity: 0.5;
+	display:inline-block;
+	cursor:pointer;
+	font-family: 'Katibeh', cursive;
+	text-decoration:none;
+    font-size: 30px;
+}
+
+#recipe:hover{
+    text-decoration: underline;
+    color: #FFFFFF80;
+}
+
+#recipe:active{
+    position:relative;
+	top:1px;
+}
+
+#navigation-account {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    list-style: none;
+}
+#navigation-account > li{
+    
+    display: inline-block;
+    
+}
+
+
+/* Add Recipe style */
+
+#postDiv{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: 'Katibeh', cursive;
+    z-index: 1;
+    background: linear-gradient(45deg,#392113,#d0bcac);
+    max-width: 30%;
+    opacity: .8.8;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 30px;
+    list-style: none;
+}
+
+#myForm{
+    outline: 0;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 25px;
+}
+.brand-name {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+
+
+.swing {
+    color: black;
+    background: #efefef;
+    border: 0;
+    outline: 0;
+    text-indent: 33%;
+    font-family: 'Katibeh', cursive;
+    border-radius: 30px;
+    width: 100%;
+    font-size: 20px;
+    padding: 2.5px, 2.5px, 2.5px, 2.5px;
+    box-shadow:
+  1.1px 0px 5.3px rgba(0, 0, 0, 0.065),
+  2.7px 0px 12.6px rgba(0, 0, 0, 0.093),
+  5px 0px 23.8px rgba(0, 0, 0, 0.115),
+  8.9px 0px 42.4px rgba(0, 0, 0, 0.137),
+  16.7px 0px 79.4px rgba(0, 0, 0, 0.165),
+  40px 0px 190px rgba(0, 0, 0, 0.23); 
+}
+
+.myButton {
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+    position: static;
+    text-align: center;
+    border-radius: 50px;
+    box-shadow:
+  3.5px 0px 11.8px rgba(0, 0, 0, 0.166),
+  6.8px 0px 24.6px rgba(0, 0, 0, 0.205),
+  10.2px 0px 39.7px rgba(0, 0, 0, 0.222),
+  14.1px 0px 60px rgba(0, 0, 0, 0.228),
+  20.3px 0px 94.6px rgba(0, 0, 0, 0.23),
+  40px 0px 190px rgba(0, 0, 0, 0.23);
+}
+
+.myButton:hover {
+	background:linear-gradient(to bottom, #ABCBE0 5%, #BBDAC7 100%);
+	background-color: #ABCBE0;
+}
+
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+#list,
+#stepList,
+.addIgt,
+.listItem{
+    list-style: none;
+    font-size: 20px;
+}
+
+.ingredient {
+    padding: 10px 0 10px 15px;
+    border: 0;
+    outline: 0;
+    text-indent: 60px;
+    font-family: 'Katibeh', cursive;
+    border-radius: 30px;
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 15px;
+    box-shadow:
+  1.1px 0px 5.3px rgba(0, 0, 0, 0.065),
+  2.7px 0px 12.6px rgba(0, 0, 0, 0.093),
+  5px 0px 23.8px rgba(0, 0, 0, 0.115),
+  8.9px 0px 42.4px rgba(0, 0, 0, 0.137),
+  16.7px 0px 79.4px rgba(0, 0, 0, 0.165),
+  40px 0px 190px rgba(0, 0, 0, 0.23);
+}
+
+.select {
+    padding: 10px 0 10px 15px;
+    border: 0;
+    outline: 0;
+    text-indent: 60px;
+    font-family: 'Katibeh', cursive;
+    border-radius: 30px;
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 15px;
+    box-shadow:
+  1.1px 0px 5.3px rgba(0, 0, 0, 0.065),
+  2.7px 0px 12.6px rgba(0, 0, 0, 0.093),
+  5px 0px 23.8px rgba(0, 0, 0, 0.115),
+  8.9px 0px 42.4px rgba(0, 0, 0, 0.137),
+  16.7px 0px 79.4px rgba(0, 0, 0, 0.165),
+  40px 0px 190px rgba(0, 0, 0, 0.23); 
+}
+
+#nextStepBtn {
+    position: static;
+    text-align: center;
+    box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+    margin-top: 15px;
+    box-shadow:
+    1.1px 0px 5.3px rgba(0, 0, 0, 0.065),
+    2.7px 0px 12.6px rgba(0, 0, 0, 0.093),
+    5px 0px 23.8px rgba(0, 0, 0, 0.115),
+    8.9px 0px 42.4px rgba(0, 0, 0, 0.137),
+    16.7px 0px 79.4px rgba(0, 0, 0, 0.165),
+    40px 0px 190px rgba(0, 0, 0, 0.23);
+}
+
+/* #nextStepBtn:hover {
+	background:linear-gradient(to bottom, #ABCBE0 5%, #BBDAC7 100%);
+	background-color: #ABCBE0;
+} */
+
+#nextStepBtn:active {
+	position:relative;
+	top:1px;
+}
+
+#addStepBtn{
+    box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+	background-color:#ffffff;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+    position: static;
+    text-align: center;
+    border-radius: 50px;
+    box-shadow:
+  3.5px 0px 11.8px rgba(0, 0, 0, 0.166),
+  6.8px 0px 24.6px rgba(0, 0, 0, 0.205),
+  10.2px 0px 39.7px rgba(0, 0, 0, 0.222),
+  14.1px 0px 60px rgba(0, 0, 0, 0.228),
+  20.3px 0px 94.6px rgba(0, 0, 0, 0.23),
+  40px 0px 190px rgba(0, 0, 0, 0.23);
+}
+
+#addStepBtn:hover {
+	background:linear-gradient(to bottom, #ABCBE0 5%, #BBDAC7 100%);
+	background-color: #ABCBE0;
+}
+
+#addStepBtn:active {
+	position:relative;
+	top:1px;
+}
+
+#stepList {
+    font-family: 'Katibeh', cursive;
+    border-radius: 30px;
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+
+/* footer{
+    text-align: right;
+    font-size: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+} */
+
+
+
+/* Kyles image CSS tests. */
+#cat,
+#dog {
+    color: white;
+    text-shadow: #392113 1px 1px 1px 1px;
+}
+
+
+#mainImg {
+    background-image: url(../foodimages/mainneutral.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+} 
+#breakfastImg {
+    background-image: url(../foodimages/breakfastOne.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center; 
+}
+#lunchImg {
+    background-image: url(../foodimages/lunchOne.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center; 
+}
+#dinnerImg {
+    background-image: url(../foodimages/dinnerOne.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center; 
+}
+#womanImg {
+    background-image: url(../foodimages/womanNeutral.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center; 
+}
+#postImg {
+    background-image: url(../foodimages/postImg.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center; 
+}
+#woodNav {
+    background-image: url(../foodimages/woodNav.jpg);
+    width: 100%;
+    height: 8.5vh;
+    min-height: 8.5vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center; 
+
+}      
